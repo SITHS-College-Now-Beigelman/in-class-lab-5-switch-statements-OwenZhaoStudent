@@ -18,41 +18,76 @@ int main() {
     int NS = 0;
     int EW = 0;
 
+    srand(time(0));
+
     for (i = 1; i <= 25 ; i++)
     {
-    srand(time(0));
     direct = rand() % 4;
 
     switch(direct)
-    {
+    { 
         case 1:
         NS = NS + 1;
         if (NS > 0);
         {
-            cout << "The robot is " << NS << " steps North of the starting point " << endl;
+            cout << "The robot is " << NS << " steps North and " << EW << " steps East of the starting point " << endl;
         }
 
-        else if ()
+        if (NS < 0);
         {
-            cout << "The robot "
+            cout << "The robot is " << NS * -1 << " steps South and " << EW * -1 << " steps West of the starting point " << endl;
+        }
+
+        if (NS = 0);
+        {
+            cout << "The robot is at the starting point" << endl;
         }
         case 2:
         NS = NS - 1;
-        if(NS < 0);
+        if (NS > 0);
         {
-            cout << "The robot is " << NS * -1 << " steps South of the starting point " << endl;
+            cout << "The robot is " << NS << " steps North and " << EW << " steps East of the starting point " << endl;
+        }
+
+        if (NS < 0);
+        {
+            cout << "The robot is " << NS * -1 << " steps South and " << EW * -1 << " steps West of the starting point " << endl;
+        }
+
+        if (NS = 0);
+        {
+            cout << "The robot is at the starting point" << endl;
         }
         case 3:
         EW = EW + 1;
-        if(EW > 0);
+        if (NS > 0);
         {
-            cout << "The robot is " << NS * -1 << " steps East of the starting point " << endl;
+            cout << "The robot is " << NS << " steps North and " << EW << " steps East of the starting point " << endl;
+        }
+
+        if (NS < 0);
+        {
+            cout << "The robot is " << NS * -1 << " steps South and " << EW * -1 << " steps West of the starting point " << endl;
+        }
+
+        if (NS = 0);
+        {
+            cout << "The robot is at the starting point" << endl;
         }
         case 4:
-        EW = EW - 1;
-        if(EW < 0);
+        if (NS > 0);
         {
-            cout << "The robot is " << NS * -1 << " steps West of the starting point " << endl;
+            cout << "The robot is " << NS << " steps North and " << EW << " steps East of the starting point " << endl;
+        }
+
+        if (NS < 0);
+        {
+            cout << "The robot is " << NS * -1 << " steps South and " << EW * -1 << " steps West of the starting point " << endl;
+        }
+
+        if (NS = 0);
+        {
+            cout << "The robot is at the starting point" << endl;
         }
     }
 
